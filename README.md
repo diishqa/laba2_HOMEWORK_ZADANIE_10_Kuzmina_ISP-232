@@ -1,0 +1,1 @@
+# laba2_HOMEWORK_ZADANIE_10_Kuzmina_ISP-232
