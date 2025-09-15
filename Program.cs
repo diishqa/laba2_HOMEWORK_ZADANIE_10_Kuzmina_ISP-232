@@ -1,10 +1,21 @@
-﻿namespace laba2_HOMEWORK_ZADANIE_10_Kuzmina_ISP_232
+﻿namespace Program //папка куда все складывается; пространство имен
 {
-    internal class Program
+    internal class Program //класс, где храняться переменные и методы
     {
-        static void Main(string[] args)
+        static int health = 100; //изначальное здоровье на 100, почему статик, не знаю...
+        static void Main(string[] args) //начало программы, функция главная самая
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine($"Здоровье персонажа: {health}"); //вывод сколько здоровья в начале
+            TakeDamage(30); //метод, который уменьшает 30 процентов здоровья. дамаг
         }
+        static void TakeDamage(int damage) //создает метод тейкдамаг....
+        {
+            health -= damage; //уменьшает здоровье на -30, тк тейкдамаг 30
+            Console.WriteLine($"Персонаж получил {damage} урона. \n Текущее здоровье: {health}."); //вывод сколько урона получили и сколько осталось здоровья
+            Console.ReadLine(); //ввод - просто чтобы окно с выводом не закрывалось сразу.
+        }
+
     }
+
+       
 }
